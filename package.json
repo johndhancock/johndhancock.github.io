@@ -1,0 +1,25 @@
+{
+  "name": "17blackbeans",
+  "version": "1.0.0",
+  "description": "Personal website of John Hancock",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Hancock",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.6",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "node-sass": "^4.11.0"
+  }
+}

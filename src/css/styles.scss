@@ -1,0 +1,109 @@
+@import '_variables';
+@import '_mixins';
+@import '_reset';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $sans;
+}
+
+h1 {
+  @include type(9rem, 9.6rem);
+  margin-bottom: 0;
+}
+h2 {
+  @include type(4.4rem, 4.8rem);
+  margin-bottom: 2.4rem;
+}
+h5 {
+  @include type(2rem, 2.4rem);
+  margin-bottom: 1.2rem;
+}
+
+#intro {
+  min-height: 100vh;
+  background: url('../images/hero-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  padding: 0 5%;
+  header {
+    width: 90%;
+    max-width: 1200px;
+    left: calc((100% - 1200px) / 2);
+    position: absolute;
+    bottom: 4.8rem;
+    color: white;
+    margin: 0 auto;
+    h1, h2 {
+      font-weight: 900;
+      max-width: 800px;
+    }
+    p {
+      @include type(1.8rem, 2.4rem);
+      margin-bottom: 0;
+      max-width: 800px;
+    }
+  }
+}
+
+.centerwell {
+  width: 90%;
+  max-width: 1200px;
+  margin: 9.6rem auto;
+}
+
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+}
+
+.work__entry {
+  box-shadow: 2px 2px 4px rgba($black245, .95), 2px -2px 4px rgba($black245, .95), -2px 2px 4px rgba($black245, .95), -2px -2px 4px rgba($black245, .95);
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.work__content {
+  padding: 1.2rem;
+  h5 {
+    font-weight: 900;
+    color: $black33;
+  }
+  p, a {
+    @include type(1.4rem, 1.8rem);
+    margin-bottom: 1.2rem;
+  }
+  p {
+    color: $black33;
+  }
+  a {
+    color: $linkBlue;
+    &:visited {
+      color: $linkBlue;
+    }
+  }
+}
+
+.work__skills {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid $brandGold;
+  span {
+    @include type(1.2rem, 1.2rem);
+    padding: .6rem;
+    background-color: lighten($brandGold, 20);
+    display: inline-block;
+    border-radius: .6rem;
+    border: 1px solid $brandGold;
+    margin-right: .3rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
