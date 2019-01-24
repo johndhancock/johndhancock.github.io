@@ -7,6 +7,11 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+var browserify = require('browserify');
+var gutil = require('gulp-util');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var babelify = require('babelify');
 
 
 sass.compiler = require('node-sass')
@@ -19,13 +24,28 @@ gulp.task('server', function () {
   });
 });
 
+var props = {
+  entries: `./src/js/scripts.js`,
+  extensions: ['.js'],
+  cache: {},
+  packageCache: {},
+  debug: true,
+};
+
+var bundler = browserify(props)
+  .transform('babelify', {presets: ['env']})
+
 gulp.task('scripts', function () {
-  return gulp.src('src/js/*.js')
-    .pipe(sourcemaps.init())
-    .pipe(babel())
-    .pipe(uglify())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('dist/js'));
+  return bundler.bundle()
+    .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .pipe(source('scripts.js'))
+    .pipe(buffer())
+    // eslint-disable-next-line no-param-reassign
+    .pipe(rename((filePath) => { filePath.basename += '-bundle'; }))
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(uglify({ mangle: false, compress: true }).on('error', gutil.log))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./dist/js/'));
 });
 
 
