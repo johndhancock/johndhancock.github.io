@@ -1,0 +1,44 @@
+[
+  {
+    "head": "Pain & profit",
+    "imagename": "painprofit",
+    "blurb": "Design and front-end development for multi-part investigation into the failings of Texas to protect vulnerable citizens from managed care companies.",
+    "url": "https://interactives.dallasnews.com/2018/pain-and-profit",
+    "tags": ["html", "css", "javascript"],
+  },
+  {
+    "head": "Standoff",
+    "imagename": "standoff",
+    "blurb": "Design direction and project management for an in-depth look into the confrontation between Dallas SWAT officers and the Dallas Police Shooting gunman within the halls of El Centro College.",
+    "url": "https://interactives.dallasnews.com/2017/dallas-police-ambush-anniversary-photos/",
+    "tags": [],
+  },
+  {
+    "head": "It’s history now",
+    "imagename": "historynow",
+    "blurb": "Art direction, design and development for a series of short videos and stories on those affected by the Dallas Police Shooting, one year later.",
+    "url": "https://interactives.dallasnews.com/2017/dallas-police-ambush-anniversary-photos/",
+    "tags": ["html", "css", "javascript"]
+  },
+  {
+    "head": "Overlooked",
+    "imagename": "overlooked",
+    "blurb": "Presentation design and front-end development, including creation of a custom photo gallery, for investigative story on what happens to the children of women who go to jail.",
+    "url": "https://interactives.dallasnews.com/2017/overlooked/",
+    "tags": ["html", "css", "javascript"]
+  },
+  {
+    "head": "The weight of a wall",
+    "imagename": "wall",
+    "blurb": "Custom presentation and front-end development of geographically-based storytelling centered on what a border wall would mean for the citizens and law enforcement officers that live and work along the border.",
+    "url": "https://interactives.dallasnews.com/2017/borderland-project/",
+    "tags": ["html", "css", "javascript", "mapbox"]
+  },
+  {
+    "head": "Rolling up on Dixon Circle",
+    "imagename": "dixon",
+    "blurb": "Custom presentation design and front-end development of an alternative storyform for a series of vignettes on what life is like for the residents of a South Dallas neighborhood that was nearly ripped apart following a police shooting in 2012.",
+    "url": "http://interactives.dallasnews.com/2016/dixon-circle/",
+    "tags": ["html", "css", "javascript", "mapbox"]
+  }
+]

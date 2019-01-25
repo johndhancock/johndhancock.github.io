@@ -1,12 +1,16 @@
-import app from './modules/app.json';
-document.addEventListener('DOMContentLoaded', function (event) {
+import $ from 'jquery';
+import Handlebars from 'handlebars';
+import projects from './modules/design.json';
 
-  const testData = [{'head': 'headline'}];
-  console.log('ready to es6!');
-  const foo = 4;
-  const bar = 5;
-  console.log(foo, bar);
-  console.log(app[0].head);
+document.addEventListener('DOMContentLoaded', (e) => {
+  const source = document.getElementById('work-template').innerHTML;
+  const workTemplate = Handlebars.compile(source);
+  const workGrid = document.getElementById('work__grid');
+
+  projects.forEach((project) => {
+    const projectBlock = workTemplate(project);
+    $('#work__grid').append(projectBlock);
+  });
 });
 //
 // const app = new App();

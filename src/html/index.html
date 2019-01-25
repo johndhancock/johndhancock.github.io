@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="css/styles-bundle.css"/>
     <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
     <script src="js/scripts-bundle.js"></script>
+
+    <script id="work-template" type="text/x-handlebars-template">
+      <div class="work__entry">
+        <img src="images/{{imagename}}.jpg" alt="{{head}}" />
+        <div class="work__content">
+          <h5>{{head}}</h5>
+          <p>{{blurb}}</p>
+          <a href="{{url}}">View site</a>
+          <div class="work__skills">
+            {{#each tags}}
+              <span>{{this}}</span>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </script>
   </head>
   <body>
     <article>
@@ -42,55 +58,7 @@
 
         <div class="work__block">
           <h4>Design</h4>
-            <div class="work__grid">
-              <div class="work__entry">
-                <img src="images/painprofit.jpg" alt="Image alt text here" />
-                <div class="work__content">
-                  <h5>Pain and Profit</h5>
-                  <p>Design and front-end development for multi-part investigation into the failings of Texas to protect vulnerable citizens from managed care companies.</p>
-                  <a href="https://interactives.dallasnews.com/2018/pain-and-profit">View site</a>
-                  <div class="work__skills">
-                    <span class="skill--html">html</span> <span class="skill--css">css</span> <span class="skill--js">javascript</span>
-                  </div>
-                </div>
-            </div>
-
-            <div class="work__entry">
-              <img src="images/painprofit.jpg" alt="Image alt text here" />
-              <div class="work__content">
-                <h5>Pain and Profit</h5>
-                <p>Design and front-end development for multi-part investigation into the failings of Texas to protect vulnerable citizens from managed care companies.</p>
-                <a href="https://interactives.dallasnews.com/2018/pain-and-profit">View site</a>
-                <div class="work__skills">
-                  <span class="skill--html">html</span> <span class="skill--css">css</span> <span class="skill--js">javascript</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="work__entry">
-              <img src="images/painprofit.jpg" alt="Image alt text here" />
-              <div class="work__content">
-                <h5>Pain and Profit</h5>
-                <p>Design and front-end development for multi-part investigation into the failings of Texas to protect vulnerable citizens from managed care companies.</p>
-                <a href="https://interactives.dallasnews.com/2018/pain-and-profit">View site</a>
-                <div class="work__skills">
-                  <span class="skill--html">html</span> <span class="skill--css">css</span> <span class="skill--js">javascript</span>
-                </div>
-              </div>
-          </div>
-
-          <div class="work__entry">
-            <img src="images/painprofit.jpg" alt="Image alt text here" />
-            <div class="work__content">
-              <h5>Pain and Profit</h5>
-              <p>Design and front-end development for multi-part investigation into the failings of Texas to protect vulnerable citizens from managed care companies.</p>
-              <a href="https://interactives.dallasnews.com/2018/pain-and-profit">View site</a>
-              <div class="work__skills">
-                <span class="skill--html">html</span> <span class="skill--css">css</span> <span class="skill--js">javascript</span>
-              </div>
-            </div>
-        </div>
-          </div>
+            <div id="work__grid"></div>
         </div>
 
       </section>

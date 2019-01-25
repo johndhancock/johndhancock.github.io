@@ -55,14 +55,19 @@ h5 {
   margin: 9.6rem auto;
 }
 
-.work__grid {
+#work__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
+  grid-row-gap: 2.4rem;
 }
 
 .work__entry {
-  box-shadow: 2px 2px 4px rgba($black245, .95), 2px -2px 4px rgba($black245, .95), -2px 2px 4px rgba($black245, .95), -2px -2px 4px rgba($black245, .95);
+  box-shadow: 2px 2px 4px rgba($black215, .55), 2px -2px 4px rgba($black215, .55), -2px 2px 4px rgba($black215, .55), -2px -2px 4px rgba($black215, .55);
+  @include transition(all, .15s, ease-out);
+  &:hover {
+    box-shadow: 4px 4px 6px rgba($black215, .35), 4px -4px 6px rgba($black215, .35), -4px 4px 6px rgba($black215, .35), -4px -4px 6px rgba($black215, .35);
+  }
   img {
     display: block;
     width: 100%;
