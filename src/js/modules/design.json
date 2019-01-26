@@ -1,5 +1,12 @@
 [
   {
+    "head": "Swish 41",
+    "imagename": "dirk",
+    "blurb": "Data gathering, visualization and front-end development for a scrolly-telling, comprehensive look at every shot Mavericks great Dirk Nowitzki took in his career.",
+    "url": "https://interactives.dallasnews.com/2019/every-shot-dirk-ever-took",
+    "tags": ["python", "html", "css", "javascript", "mapbox"],
+  },
+  {
     "head": "Pain & profit",
     "imagename": "painprofit",
     "blurb": "Design and front-end development for multi-part investigation into the failings of Texas to protect vulnerable citizens from managed care companies.",
@@ -7,11 +14,18 @@
     "tags": ["html", "css", "javascript"],
   },
   {
+    "head": "Redistricting redux",
+    "imagename": "redistricting-redux",
+    "blurb": "Scrolly-telling design and development for explanatory investigation into the gerrymandered congressional districts of the Dallas-Fort Worth metroplex.",
+    "url": "https://interactives.dallasnews.com/2018/redistricting-redux/",
+    "tags": ["html", "css", "javascript", "qgis", "mapbox"],
+  },
+  {
     "head": "Standoff",
     "imagename": "standoff",
     "blurb": "Design direction and project management for an in-depth look into the confrontation between Dallas SWAT officers and the Dallas Police Shooting gunman within the halls of El Centro College.",
     "url": "https://interactives.dallasnews.com/2017/dallas-police-ambush-anniversary-photos/",
-    "tags": [],
+    "tags": ["html", "css"],
   },
   {
     "head": "It’s history now",
@@ -33,6 +47,20 @@
     "blurb": "Custom presentation and front-end development of geographically-based storytelling centered on what a border wall would mean for the citizens and law enforcement officers that live and work along the border.",
     "url": "https://interactives.dallasnews.com/2017/borderland-project/",
     "tags": ["html", "css", "javascript", "mapbox"]
+  },
+  {
+    "head": "Tony Romo's career, visualized",
+    "imagename": "romo",
+    "blurb": "Data gathering, analysis, and visualization of every pass Cowboys quarterback Tony Romo threw to a teammate (or even, himself).",
+    "url": "https://interactives.dallasnews.com/2017/borderland-project/",
+    "tags": ["python", "html", "css", "javascript", "d3"]
+  },
+  {
+    "head": "Kings of the clutch",
+    "imagename": "rangers",
+    "blurb": "Data gathering, analysis, and visualization of the Texas Rangers’ performance in one-run games over the course of the 2016 season.",
+    "url": "https://interactives.dallasnews.com/2017/borderland-project/",
+    "tags": ["python", "html", "css", "javascript", "d3"]
   },
   {
     "head": "Rolling up on Dixon Circle",
