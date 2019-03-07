@@ -5,9 +5,37 @@
     <title>17 black beans</title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The personal website of John Hancock, designer and front-end developer.">
+    <meta name="robots" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+      <!-- <meta name="referrer" content="origin"> -->
+    <meta name="author" content="John Hancock" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta property="og:url" content="https://example.com/page.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Content Title">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="John Hancock">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Hancock_JohnD">
+    <meta name="twitter:creator" content="@Hancock_JohnD">
+    <meta name="twitter:url" content="https://example.com/page.html">
+    <meta name="twitter:title" content="John Hancock, designer and front-end developer">
+    <meta name="twitter:description" content="The personal website of John Hancock, including examples of his work and his work experience.">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+
+    <!-- <base href="https://example.com/page.html"> -->
+
 
     <link rel="stylesheet" href="css/styles-bundle.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
     <script src="js/scripts-bundle.js"></script>
 
     <script id="work-template" type="text/x-handlebars-template">
@@ -15,8 +43,7 @@
         <img src="images/{{imagename}}.jpg" alt="{{head}}" />
         <div class="work__content">
           <h5>{{head}}</h5>
-          <p>{{blurb}}</p>
-          <a href="{{url}}">View site</a>
+          <p>{{blurb}} <a href="{{url}}">View</a></p>
           <div class="work__skills">
             {{#each tags}}
               <span>{{this}}</span>
@@ -27,107 +54,134 @@
     </script>
   </head>
   <body>
-    <article>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Output</a></li>
+        <li><a href="#resume">Bonafides</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="hero-image"></div>
       <!-- <h2>This is the website of John Hancock</h2> -->
       <section id="intro">
         <header>
-          <h1>I’m John Hancock</h1>
-          <h2>Designer, developer, journalist, Texan</h2>
-          <p>Currently interactives and data editor at The Dallas Morning News. Hammering away on design, development and data visualizations. Grew up on print, making my bones on digital. Texan since birth. Longhorn since 1997. Father since 2014.</p>
+          <div class="header-content">
+            <h1>John Hancock</h1>
+            <h5><span>Designer</span> <span>Developer</span> <span>Journalist</span></h5>
+          </div>
+          <!-- <p>Currently interactives and data editor at The Dallas Morning News. Hammering away on design, development and data visualizations. Grew up on print, making my bones on digital. Texan since birth. Longhorn since 1997. Father since 2014.</p> -->
         </header>
       </section>
 
-      <section id="work" class="centerwell">
-        <!--
 
-        Design
-        Pain and Profit
-        It's History Now
-        Overlooked
-        Rolling up on Dixon Circle
+<!--
+ToDo:
+Meta tags
+About me
+-->
 
-        Data viz
-        Swish 41
-        Redistricting Redux
-        Tony Romo's Career, Visualized
-        Kings of the Clutch
-
-
-        -->
-
-
-        <div class="work__block">
-          <h4>Design</h4>
-            <div id="work__grid"></div>
+<!--
+      <section id="about" class="centerwell">
+        <div class="section__header">
+          <h4><div class="header__bumper"><span></span></div>About me</h4>
         </div>
 
-      </section>
-
-      <section id="resume">
-        <div class="resume__block">
-          <h4>Experience</h4>
-          <div class="resume__entry">
-            <h5 class="resume__entity">The Dallas Morning News</h5>
-            <h6 class="resume__position">Editor, Data and Interactives <span class="resume__date">April 2017 - Present</span></h6>
-            <p>Lead a team of computational journalists, interactive editors and graphic artists. Oversee the conception, design and development of newsroom applications, interactive presentations and data visualizations. Work closely with reporters and editors to ensure digital products and alternative storytelling presentations complement in-depth written and visual reporting in a user-friendly manner.</p>
-          </div>
-          <div class="resume__entry">
-            <h6 class="resume__position">Interactive Storytelling Editor <span class="resume__date">July 2014 - April 2017</span></h6>
-            <p>Designed and developed interactive storytelling and data visualization presentations using responsive web design techniques with an emphasis on usability and optimization, including a Pulitzer-finalist breaking news presentation for the Dallas Police shooting. Developed new and innovative ways to present digital content. Trained others in the newsroom to complete similar projects.</p>
-          </div>
-          <div class="resume__entry">
-            <h6 class="resume__position">Designer, New Digital Products <span class="resume__date">April 2012 - July 2017</span></h6>
-            <p>Contributed to front-end development and user interface design for mobile applications. Worked with third parties on design direction, asset creation and collection for large-scale digital products, including the dallasnews.com website.</p>
-          </div>
-          <div class="resume__entry">
-            <h6 class="resume__position">Lead Designer, SportsDay <span class="resume__date">Sept. 2003 - April 2012</span></h6>
-            <p>Designed print section fronts, special sections, illustrations, graphic packages, logos  and digital interactives.  Spearheaded the development of design style guidelines for the daily sports section and special sections.</p>
-          </div>
-          <div class="resume__entry">
-            <h5 class="resume__entity">The Savannah Morning News</h5>
-            <h6 class="resume__position">Page Designer <span class="resume__date">Jan. 2001 - Sept. 2003</span></h6>
-            <p>Designed sports section fronts, special sections and graphic packages.</p>
-          </div>
-        </div>
-
-        <div class="resume__block">
-          <h4>Skills</h4>
-          <div class="resume__entry">
-            <h6>Web Development</h6>
-            <p>Proficient in creating web presentations and data visualizations using front end technologies such as HTML5, CSS3, SCSS and Javascript, along with javascript libraries such as jQuery, d3, Handlebars and Mapbox GL. Experience with Gulp build processes and Git version control. Familiar with Django, Node.js, and AWS products such as S3 and Cloudfront.</p>
-          </div>
-
-          <div class="resume__entry">
-            <h6>Data analysis</h6>
-            <p>Proficient in Python with experience using tools such as Jupyter Notebooks. Experience with QGIS.</p>
-          </div>
-        </div>
-
-        <div class="resume__block">
-          <h4>Awards</h4>
-          <div class="resume__entry">
-            <h6>Society of News Design</h6>
-            <p>14 Awards of Excellence, including Individual Digital Portfolio, Product Design, Digital Features Coverage and Breaking/Daily Digital News</p>
-          </div>
-        </div>
-
-        <div class="resume__block">
-          <h4>Education</h4>
-          <div class="resume__entry">
-            <h6>NICAR <span class="resume__date">2016 - 2018</span></h6>
-            <p>Attended yearly National Institute for Computer Assisted Reporting conferences for instruction on the latest technology and techniques for digital journalism.</p>
-          </div>
-          <div class="resume__entry">
-            <h6>Nielsen Norman Group <span class="resume__date">2013</span></h6>
-            <p>UX Training, Consulting and Research Usability Week</p>
-          </div>
-          <div class="resume__entry">
-            <h6>University of Texas at Austin <span class="resume__date">2000</span></h6>
-            <p>Bachelor of Arts, Journalism</p>
-          </div>
+        <div class="about__block">
+          <p class="about__content">My name is John Hancock, and yes, I get asked to put my name on things. A lot. I was born and raised in Texas, and earned a degree in journalism at the University of Texas at Austin. I spent 11 years designing print layouts, sections and data visualizations for the sports departments of <em>The Savannah Morning News</em> and <em>The Dallas Morning News</em> before shifting my career to digital design and development.</p>
+          <p class="about__content">Currently, I lead the interactives and data team at <em>The Dallas Morning News,</em> where we produce some of the best digital storytelling and newsroom products in the industry for a regional paper our size.</p>
         </div>
       </section>
 
-    </article>
+
+-->
+
+      <article id="content">
+        <section id="about" class="centerwell">
+          <div class="section__header">
+            <h3>About me</h3>
+          </div>
+          <p>Yep. I get a lot of jokes about my name. A lot of people also ask me to ”put my John Hancock” on some piece of paper with a chuckle. How much is a lot? More than you. It’s okay though, I enjoy it, and my wife thinks a liftime of being ribbed about my name has led to my good nature.</p>
+          <p>Currently, I’m the editor of the interactives and data team for <em>The Dallas Morning News</em>, where we build immersive and unique story presentations, data visualizations and news applications. I’ve worked at the <em>Morning News</em> since 2003, when I started as a sports page designer. Since then, I’ve also been a new producet designer and interactives designer.</p>
+          <p>Away from the keyboard, I’m a father to Hayes, a husband to Jamie and a human to our pug, Pagoda. I’m a Texan, through and through, and a Longhorn (Hook’em). I’m also not <em>the</em> John Hancock.</p>
+        </section>
+
+        <section id="work" class="centerwell">
+          <div class="section__header">
+            <h3>Output</h3>
+          </div>
+
+          <div class="work__block">
+              <div id="work__grid"></div>
+          </div>
+
+        </section>
+
+        <section id="resume" class="centerwell">
+          <div class="section__header">
+            <h3>Bonafides</h3>
+          </div>
+          <div class="resume__block">
+              <h5>Experience</h5>
+              <div class="resume__entry">
+                <h4 class="resume__entity">The Dallas Morning News</h4>
+                <h6 class="resume__position">Editor, Data and Interactives, <span class="resume__date">April 2017 - Present</span></h6>
+                <p>Lead a team of computational journalists, interactive editors and graphic artists. Oversee the conception, design and development of newsroom applications, interactive presentations and data visualizations. Work closely with reporters and editors to ensure digital products and alternative storytelling presentations complement in-depth written and visual reporting in a user-friendly manner.</p>
+                <h6 class="resume__position">Interactive Storytelling Editor, <span class="resume__date">July 2014 - April 2017</span></h6>
+                <p>Designed and developed interactive storytelling and data visualization presentations using responsive web design techniques with an emphasis on usability and optimization, including a Pulitzer-finalist breaking news presentation for the Dallas Police shooting. Developed new and innovative ways to present digital content. Trained others in the newsroom to complete similar projects.</p>
+                <h6 class="resume__position">Designer, New Digital Products, <span class="resume__date">April 2012 - July 2017</span></h6>
+                <p>Contributed to front-end development and user interface design for mobile applications. Worked with third parties on design direction, asset creation and collection for large-scale digital products, including the dallasnews.com website.</p>
+                <h6 class="resume__position">Lead Designer, SportsDay, <span class="resume__date">Sept. 2003 - April 2012</span></h6>
+                <p>Designed print section fronts, special sections, illustrations, graphic packages, logos  and digital interactives.  Spearheaded the development of design style guidelines for the daily sports section and special sections.</p>
+                <h4 class="resume__entity">The Savannah Morning News</h4>
+                <h6 class="resume__position">Page Designer, <span class="resume__date">Jan. 2001 - Sept. 2003</span></h6>
+                <p>Designed sports section fronts, special sections and graphic packages.</p>
+            </div>
+
+              <h5>Skills</h5>
+              <div class="resume__entry">
+                <p>Proficient in creating web presentations and data visualizations using front end development languages such as HTML, CSS, SCSS and Javascript, along with javascript libraries such as jQuery, d3, Handlebars and Mapbox GL. Experience with Gulp build processes and Git version control. Familiar with Django, Node.js, and AWS products such as S3 and Cloudfront. Experienced using Python and Jupyter Notebooks to gather, clean and parse data. Experience with QGIS.</p>
+              </div>
+
+              <h5>Awards</h5>
+              <div class="resume__entry">
+                <p>Society of News Design Awards of Excellence (* 18), including Individual Digital Portfolio, Product Design, Digital Features Coverage and Breaking/Daily Digital News. Three-time Dallas Morning News Journalist of the Year (Visual Journalist * 2, Digital Storyteller * 1). </p>
+              </div>
+
+              <h5>Education</h5>
+              <div class="resume__entry">
+                <h6>NICAR, <span class="resume__date">2016 - 2018</span></h6>
+                <p>Attended yearly National Institute for Computer Assisted Reporting conferences for instruction on the latest technology and techniques for digital journalism.</p>
+                <h6>Nielsen Norman Group, <span class="resume__date">2013</span></h6>
+                <p>UX Training, Consulting and Research Usability Week</p>
+                <h6>University of Texas at Austin, <span class="resume__date">2000</span></h6>
+                <p>Bachelor of Arts, Journalism</p>
+            </div>
+          </div>
+        </section>
+      </article
+
+    </main>
+
+    <footer>
+      <h4>John Hancock</h4>
+      <h6>Designer Developer Journalist</h6>
+
+      <div class="footer-content">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Output</a></li>
+          <li><a href="#resume">Bonafides</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="https://twitter.com/Hancock_JohnD">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/johndarinhancock/">LinkedIn</a></li>
+          <li><a href="https://dribbble.com/jhancock">Dribbble</a></li>
+        </ul>
+      </div>
+
+      <p>©<span id="footer-year"></span>, John Hancock. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
