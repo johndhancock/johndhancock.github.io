@@ -19,7 +19,7 @@ sass.compiler = require('node-sass')
 gulp.task('server', function () {
   browserSync.init({
     server: {
-      baseDir: './dist'
+      baseDir: './'
     }
   });
 });
@@ -45,7 +45,7 @@ gulp.task('scripts', function () {
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(uglify({ mangle: false, compress: true }).on('error', gutil.log))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/js/'));
+    .pipe(gulp.dest('./js/'));
 });
 
 
@@ -57,12 +57,12 @@ gulp.task('styles', function () {
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./css'));
 })
 
 gulp.task('html', function () {
   return gulp.src('src/html/*.html')
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('live-reload', ['scripts', 'styles', 'html'], function (done) {

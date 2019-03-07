@@ -41,6 +41,10 @@ strong {
   font-weight: 900;
 }
 
+em {
+  font-style: italic;
+}
+
 // .accent {
 //   position: relative;
 //   display: inline-block;
@@ -247,6 +251,7 @@ nav {
     max-width: 800px;
     margin: 0 auto 2.4rem;
     width: 90%;
+    font-weight: 300;
   }
 }
 
