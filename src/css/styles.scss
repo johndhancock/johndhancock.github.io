@@ -41,10 +41,6 @@ strong {
   font-weight: 900;
 }
 
-em {
-  font-style: italic;
-}
-
 // .accent {
 //   position: relative;
 //   display: inline-block;
@@ -251,7 +247,7 @@ nav {
     max-width: 800px;
     margin: 0 auto 2.4rem;
     width: 90%;
-    font-weight: 300;
+    font-family: $body;
   }
 }
 
@@ -314,7 +310,8 @@ nav {
     margin-bottom: 1.2rem;
   }
   p {
-    font-weight: 300;
+    font-weight: 400;
+    font-family: $body;
   }
   a {
     color: white;
@@ -383,8 +380,17 @@ nav {
   p {
     font-weight: 100;
     margin-bottom: 2.4rem;
+    font-family: $body;
     &:last-of-type {
       margin-bottom: 0;
+    }
+  }
+  li {
+    @include type(1.4rem, 1.8rem);
+    margin-bottom: .3rem;
+    font-family: $body;
+    &:last-of-type {
+      margin-bottom: 2.4rem;
     }
   }
   @media (max-width: 550px) {
