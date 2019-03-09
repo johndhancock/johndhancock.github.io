@@ -76,7 +76,9 @@
           </div>
 
           <div class="work__block">
-              <div id="work__grid"></div>
+              <div id="work__grid">
+                <portfolio-card v-for="project in projects" :project-data="project" :key="project.head"></portfolio-card>
+              </div>
           </div>
 
         </section>
@@ -143,6 +145,10 @@
           <p>Away from the keyboard, I’m a father to Hayes, a husband to Jamie and a human to our pug, Pagoda. I’m a Texan, through and through, and a Longhorn (Hook’em). And if you’re wondering, I’m not related to <em>that</em> John Hancock — as far as I know.</p>
         </section>
       </article>
+
+      <section id="vue-test">
+        <h1>{{greeting}}</h1>
+      </section>
 
     </main>
 

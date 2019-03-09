@@ -11,6 +11,7 @@
   "devDependencies": {
     "autoprefixer": "^9.4.6",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babelify": "^7.3.0",
     "browser-sync": "^2.26.3",
@@ -34,6 +35,10 @@
   },
   "dependencies": {
     "handlebars": "^4.0.12",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "vue": "^2.6.8"
+  },
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
   }
 }

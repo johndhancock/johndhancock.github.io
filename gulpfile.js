@@ -43,7 +43,7 @@ gulp.task('scripts', function () {
     // eslint-disable-next-line no-param-reassign
     .pipe(rename((filePath) => { filePath.basename += '-bundle'; }))
     .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(uglify({ mangle: false, compress: true }).on('error', gutil.log))
+    .pipe(uglify({ mangle: false, compress: {unused: false} }).on('error', gutil.log))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./js/'));
 });
