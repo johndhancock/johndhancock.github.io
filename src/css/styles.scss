@@ -41,6 +41,10 @@ strong {
   font-weight: 900;
 }
 
+em {
+  font-style: italic;
+}
+
 // .accent {
 //   position: relative;
 //   display: inline-block;
@@ -314,17 +318,19 @@ nav {
     font-family: $body;
   }
   a {
-    color: white;
+    color: $brandGold;
     font-weight: 700;
     &:visited {
-      color: white;
+      color: $brandGold;
     }
   }
 }
 
 .work__skills {
-  margin-top: .6rem;
-  display: inline-block;
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(white, .1);
+  display: block;
   span {
     background-color: $black33;
     @include type(1.2rem, 1.2rem);
@@ -332,6 +338,8 @@ nav {
     margin: 0 .3rem .3rem 0;
     color: white;
     padding: .6rem;
+    text-align: center;
+    border-radius: 2px;
     &:last-of-type {
       margin-right: 0;
     }
