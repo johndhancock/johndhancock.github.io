@@ -20,7 +20,8 @@ gulp.task('server', function () {
   browserSync.init({
     server: {
       baseDir: './'
-    }
+    },
+    ghostMode: false
   });
 });
 
@@ -57,7 +58,8 @@ gulp.task('styles', function () {
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream());
 })
 
 gulp.task('html', function () {
@@ -65,7 +67,7 @@ gulp.task('html', function () {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('live-reload', ['scripts', 'styles', 'html'], function (done) {
+gulp.task('live-reload', ['scripts', 'html'], function (done) {
   browserSync.reload();
   done();
 });
@@ -74,7 +76,7 @@ gulp.task('live-reload', ['scripts', 'styles', 'html'], function (done) {
 // watches js
 gulp.task('watch', function () {
   gulp.watch('src/js/*.js', ['scripts', 'live-reload']);
-  gulp.watch('src/css/*.scss', ['styles', 'live-reload']);
+  gulp.watch('src/css/*.scss', ['styles']);
   gulp.watch('src/html/*.html', ['html', 'live-reload']);
 });
 
