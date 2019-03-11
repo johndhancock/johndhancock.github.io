@@ -25,37 +25,31 @@ document.addEventListener('DOMContentLoaded', (e) => {
     },
   });
 
-  // <div v-for="project in projects" class="work__entry">
-  //   <img :src="'images/' + project.imagename + '.jpg'" :alt="project.head" />
-  //   <div class="work__content">
-  //     <h5>{{project.head}}</h5>
-  //     <p>{{project.blurb}} <a :href="project.url">View</a></p>
-  //     <div v-if="project.tags" class="work__skills">
-  //       <span v-for="tag in project.tags">{{tag}}</span>
-  //     </div>
-  //   </div>
-  // </div>
-
   Vue.component('portfolio-card', {
     props: ['projectData'],
     data() {
       return {
-        project: {...this.projectData}
-      }
+        project: { ...this.projectData },
+      };
     },
     template: `
       <div class="work__entry">
         <img :src="'images/' + project.imagename + '.jpg'" :alt=project.head />
         <div class="work__content">
           <h5>{{project.head}}</h5>
-          <p>{{project.blurb}} <a href="{{project.url}}">View</a><p>
+          <p>{{project.blurb}} <a :href="project.url">View</a><p>
+          <button @click="viewProcess">View Process</button>
           <div v-if="project.tags" class="work__skills">
             <span v-for="tag in project.tags">{{tag}}</span>
           </div>
         </div>
       </div>
     `,
-    methods: {},
+    methods: {
+      viewProcess() {
+        console.log(this.project.head);
+      },
+    },
   });
 
   const portfolio = new Vue({
