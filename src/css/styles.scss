@@ -239,6 +239,35 @@ nav {
     width: 90%;
     font-family: $body;
   }
+  h5 {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  ul {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+
+    li {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background-color: white;
+      text-align: center;
+      margin-right: 10px;
+      a {
+        @include type(1.6rem, 1.6rem);
+        position: relative;
+        top: .7rem;
+        color: $black33;
+        text-align: center;
+      }
+    }
+  }
 }
 
 #work__grid {
