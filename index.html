@@ -39,11 +39,20 @@
         <img src="images/{{imagename}}.jpg" alt="{{head}}" />
         <div class="work__content">
           <h5>{{head}}</h5>
-          <p>{{blurb}} <a href="{{url}}">View</a></p>
+          <p class="blurb">{{blurb}} <a href="{{url}}">View</a></p>
           <div class="work__skills">
+            <p class="label"><strong>Roles: </strong>
+            {{#each roles}}
+              <span>{{this}}</span>
+            {{/each}}
+            </p>
+          </div>
+          <div class="work__skills">
+            <p class="label"><strong>Skills: </strong>
             {{#each tags}}
               <span>{{this}}</span>
             {{/each}}
+            </p>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@
     "blurb": "Twenty-one years, over 26,000 shots. Tour every dunk, layup, 3-pointer and, of course, fadeaway jumper that make up Dirk Nowitzki’s career.",
     "url": "https://interactives.dallasnews.com/2019/every-shot-dirk-ever-took",
     "tags": ["html", "scss", "javascript", "python"],
+    "roles": ["design", "front end development", "data scraping", "data analysis"],
   },
   {
     "head": "Pain & profit",
@@ -12,6 +13,7 @@
     "blurb": "Your tax money may not help poor, sick Texans get well, but it definitely helps health care companies get rich.",
     "url": "https://interactives.dallasnews.com/2018/pain-and-profit",
     "tags": ["html", "scss", "javascript"],
+    "roles": ["design", "front end development"],
   },
   {
     "head": "Redistricting redux",
@@ -19,6 +21,7 @@
     "blurb": "In 2018, the U.S. Supreme Court was to decide whether Texas needed to re-draw electoral maps to give minority voters and equal voice. See how the Dallas-Fort Worth area would be affected.",
     "url": "https://interactives.dallasnews.com/2018/redistricting-redux/",
     "tags": ["html", "scss", "mapbox", "qgis"],
+    "roles": ["design", "front end development"],
   },
   {
     "head": "Standoff",
@@ -26,47 +29,54 @@
     "blurb": "The inside story of the night of July 7, 2016, when a small group of elite cops squared off inside El Centro College with a gunman who had just killed five of their fellow officers.",
     "url": "https://interactives.dallasnews.com/2018/standoff/",
     "tags": ["project management"],
+    "roles": ["art direction", "visual editing"],
   },
   {
     "head": "It’s history now",
     "imagename": "historynow",
     "blurb": "The images caputred on July 7, 2016 and the days that followed revive memories for those at the center of the ambush that killed five officers.",
     "url": "https://interactives.dallasnews.com/2017/dallas-police-ambush-anniversary-photos/",
-    "tags": ["scss", "javascript"]
+    "tags": ["html", "scss", "javascript"],
+    "roles": ["design", "front end development"],
   },
   {
     "head": "Overlooked",
     "imagename": "overlooked",
     "blurb": "As women go to jail in record numbers, who’s watching out for their kids? No one, leaving them home alone, in foster care, handed over to inappropriate guardians or on the streets.",
     "url": "https://interactives.dallasnews.com/2017/overlooked/",
-    "tags": ["scss", "javascript"]
+    "tags": ["html", "scss", "javascript"],
+    "roles": ["design", "front end development"],
   },
   {
     "head": "The weight of a wall",
     "imagename": "wall",
     "blurb": "Voices from the desert near El Paso to the fertile valley at the tip of Texas wrestle with a ‘a big, beautiful, powerful wall’ through the borderland.",
     "url": "https://interactives.dallasnews.com/2017/borderland-project/",
-    "tags": ["scss", "javascript", "mapbox"]
+    "tags": ["html", "scss", "javascript", "mapbox"],
+    "roles": ["design", "front end development"],
   },
   {
     "head": "Tony Romo's career, visualized",
     "imagename": "romo",
     "blurb": "Tour Tony Romo’s career, all 4,520 regular and postseason pass attempts. See every completion, touchdown, interception and player who caught a pass from the Cowboys quarterback (including himself).",
     "url": "https://interactives.dallasnews.com/2017/romo-career/",
-    "tags": ["scss", "javascript", "python", "d3"]
+    "tags": ["html", "scss", "javascript", "python", "d3"],
+    "roles": ["design", "front end development", "data scraping", "data analysis"],
   },
   {
     "head": "Kings of the clutch",
     "imagename": "rangers",
     "blurb": "The Texas Rangers are American League West champions thanks in part to a historic win-rate in one-run games. That success wasn’t just luck.",
     "url": "http://interactives.dallasnews.com/2016/rangers-one-run-wins/",
-    "tags": ["scss", "javascript", "python", "d3"]
+    "tags": ["html", "scss", "javascript", "python", "d3"],
+    "roles": ["design", "front end development", "data scraping", "data analysis"],
   },
   {
     "head": "Rolling up on Dixon Circle",
     "imagename": "dixon",
     "blurb": "Dixon Circle nearly rioted when a cop killed a fleeing black man there in 2012. Police responded with outreach, turning the neighborhood into a model of reform — unless you happen to live there.",
     "url": "http://interactives.dallasnews.com/2016/dixon-circle/",
-    "tags": ["scss", "javascript", "mapbox"]
+    "tags": ["html", "scss", "javascript", "mapbox"],
+    "roles": ["design", "front end development"],
   }
 ]

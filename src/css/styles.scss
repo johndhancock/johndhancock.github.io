@@ -301,7 +301,6 @@ nav {
 }
 
 .work__content {
-  // padding: 0 2.4rem 2.4rem 0;
   color: white;
   h5 {
     font-weight: 900;
@@ -313,6 +312,10 @@ nav {
   p {
     font-weight: 400;
     font-family: $body;
+    &.blurb {
+      padding-bottom: .6rem;
+      border-bottom: 1px solid rgba($black215, .1);
+    }
   }
   a {
     color: $brandGold;
@@ -324,21 +327,27 @@ nav {
 }
 
 .work__skills {
-  margin-top: 1.2rem;
-  padding-top: 1.2rem;
-  border-top: 1px solid rgba(white, .1);
+  margin-top: .6rem;
   display: block;
-  span {
-    background-color: $black33;
-    @include type(1.2rem, 1.2rem);
+  p {
+    @include type(1.3rem, 1.8rem);
     display: inline-block;
-    margin: 0 .3rem .3rem 0;
+    font-family: $sans;
+    margin-bottom: 0;
+  }
+  span {
+    display: inline-block;
     color: white;
-    padding: .6rem;
     text-align: center;
     border-radius: 2px;
+    &:after {
+      content: ', '
+    }
     &:last-of-type {
       margin-right: 0;
+      &:after {
+        content: '';
+      }
     }
   }
 }
