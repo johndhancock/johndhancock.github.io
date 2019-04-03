@@ -20,7 +20,7 @@
     "imagename": "redistricting-redux",
     "blurb": "In 2018, the U.S. Supreme Court was to decide whether Texas needed to re-draw electoral maps to give minority voters and equal voice. See how the Dallas-Fort Worth area would be affected.",
     "url": "https://interactives.dallasnews.com/2018/redistricting-redux/",
-    "tags": ["html", "scss", "mapbox", "qgis"],
+    "tags": ["html", "scss", "javascript", "mapbox", "qgis"],
     "roles": ["design", "front end development"],
   },
   {
