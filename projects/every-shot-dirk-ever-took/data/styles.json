@@ -3,7 +3,7 @@
     "sources": {
         "overlay": {
           "type": "image",
-          "url": "./images/_court.jpg",
+          "url": "https://johndhancock.github.io/projects/every-shot-dirk-ever-took/images/court.jpg",
           "coordinates": [
             [-0.00068589196, 0.00015089623],
             [0.00068589196, 0.00015089623],
