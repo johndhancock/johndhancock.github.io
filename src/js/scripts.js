@@ -22,5 +22,3 @@ document.addEventListener('DOMContentLoaded', (e) => {
     }, 500);
   });
 });
-//
-// const app = new App();
