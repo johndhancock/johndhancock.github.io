@@ -1,11 +1,51 @@
 [
   {
+    "head": "Kate Price remembers something terrible",
+    "imagename": "kateprice",
+    "blurb": "An authority on child sex trafficking, she spent decades trying to understand whether the unthinkable happened to her, too.",
+    "url": "https://apps.bostonglobe.com/magazine/2022/07/kate-price-remembers-something-terrible/",
+    "tags": ["react", "gatsby"],
+    "roles": ["design", "front end development"],
+  },
+  {
+    "head": "Explore each of David Ortiz’s 558 career home runs",
+    "imagename": "ortiz",
+    "blurb": "Red Sox legend David Ortiz is headed to the Hall of Fame. Explore all of the 558 career home runs that helped get him there.",
+    "url": "https://apps.bostonglobe.com/sports/2022/01/david-ortiz-career-home-runs/",
+    "tags": ["react", "gatsby", "python"],
+    "roles": ["design", "front end development", "data scraping", "data analysis", "data visualization"],
+  },
+  {
+    "head": "In harm’s way",
+    "imagename": "inharmsway",
+    "blurb": "Vehicle rammings against protesters are on the rise, but the justice system often sides with drivers.",
+    "url": "https://apps.bostonglobe.com/news/nation/2021/10/vehicle-rammings-against-protesters/",
+    "tags": ["react", "gatsby", "mapbox"],
+    "roles": ["design", "front end development", "data visualization", "mapping"],
+  },
+  {
+    "head": "Brad Marchand and the art of the shorthanded goal",
+    "imagename": "marchand",
+    "blurb": "The Bruins’ scrappy left wing has a knack for turning an opponent’s power play into a disadvantage.",
+    "url": "https://apps.bostonglobe.com/sports/graphics/2021/05/brad-marchand-art-of-the-shorthanded-goal/",
+    "tags": ["html", "css", "javascript", "python"],
+    "roles": ["design", "front end development", "data scraping", "data analysis", "data visualization"],
+  },
+  {
+    "head": "How would you rebuild the Patriots?",
+    "imagename": "patriots",
+    "blurb": "With ample cap space and the No. 15 draft pick, which players would you add while staying below the salary cap?",
+    "url": "https://apps.bostonglobe.com/sports/graphics/2021/03/rebuilding-the-new-england-patriots/",
+    "tags": ["react"],
+    "roles": ["design", "front end development", "game design"],
+  },
+  {
     "head": "Swish 41",
     "imagename": "dirk",
     "blurb": "Twenty-one years, over 26,000 shots. Tour every dunk, layup, 3-pointer and, of course, fadeaway jumper that make up Dirk Nowitzki’s career.",
     "url": "projects/every-shot-dirk-ever-took",
     "tags": ["html", "scss", "javascript", "python"],
-    "roles": ["design", "front end development", "data scraping", "data analysis"],
+    "roles": ["design", "front end development", "data scraping", "data analysis", "data visualization"],
   },
   {
     "head": "Pain & profit",
@@ -40,14 +80,6 @@
     "roles": ["design", "front end development"],
   },
   {
-    "head": "Overlooked",
-    "imagename": "overlooked",
-    "blurb": "As women go to jail in record numbers, who’s watching out for their kids? No one, leaving them home alone, in foster care, handed over to inappropriate guardians or on the streets.",
-    "url": "https://interactives.dallasnews.com/2017/overlooked/",
-    "tags": ["html", "scss", "javascript"],
-    "roles": ["design", "front end development"],
-  },
-  {
     "head": "The weight of a wall",
     "imagename": "wall",
     "blurb": "Voices from the desert near El Paso to the fertile valley at the tip of Texas wrestle with a ‘a big, beautiful, powerful wall’ through the borderland.",
@@ -70,13 +102,5 @@
     "url": "http://interactives.dallasnews.com/2016/rangers-one-run-wins/",
     "tags": ["html", "scss", "javascript", "python", "d3"],
     "roles": ["design", "front end development", "data scraping", "data analysis"],
-  },
-  {
-    "head": "Rolling up on Dixon Circle",
-    "imagename": "dixon",
-    "blurb": "Dixon Circle nearly rioted when a cop killed a fleeing black man there in 2012. Police responded with outreach, turning the neighborhood into a model of reform — unless you happen to live there.",
-    "url": "http://interactives.dallasnews.com/2016/dixon-circle/",
-    "tags": ["html", "scss", "javascript", "mapbox"],
-    "roles": ["design", "front end development"],
   }
 ]
